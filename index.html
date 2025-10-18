@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MONEY and RECHARGE</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #007BFF;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .card {
+        background: #ffffff;
+        border-radius: 25px;
+        padding: 5vw;
+        width: 95%;
+        max-width: 900px;
+        min-height: 80vh;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+    }
+    h1 {
+        color: #007BFF;
+        font-size: clamp(24px, 5vw, 36px);
+        margin-bottom: 30px;
+        word-break: break-word;
+    }
+    ul {
+        text-align: left;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        color: #0D47A1;
+        font-size: clamp(16px, 4vw, 18px);
+    }
+    ul li {
+        margin-bottom: 16px;
+        position: relative;
+        padding-left: 35px;
+    }
+    ul li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #00BFA5;
+        font-weight: bold;
+    }
+    .warning-message {
+        color: red;
+        font-size: clamp(14px, 4vw, 17px);
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .instruction {
+        font-size: clamp(15px, 4vw, 18px);
+        margin-bottom: 35px;
+        font-weight: bold;
+        color: #FF6F00;
+        line-height: 1.8;
+        text-align: left;
+    }
+    .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #25D366;
+        color: white;
+        font-weight: bold;
+        font-size: clamp(16px, 4vw, 20px);
+        padding: clamp(12px, 2.5vw, 18px) clamp(25px, 5vw, 35px);
+        border-radius: 50px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .whatsapp-btn:hover {
+        background: #1ebe57;
+        transform: scale(1.05);
+    }
+    .whatsapp-btn img {
+        width: clamp(24px, 5vw, 32px);
+        height: clamp(24px, 5vw, 32px);
+        margin-right: 12px;
+    }
+    .warning {
+        margin-top: 20px;
+        color: red;
+        font-size: clamp(14px, 3vw, 16px);
+        text-align: left;
+    }
+    @media (max-width: 480px) {
+        .card {
+            padding: 6vw;
+            min-height: auto;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <h1>MONEY and RECHARGE</h1>
+    
+    <ul>
+        <li>সর্বোচ্চ 500 টাকা ধার দেওয়া হয়।</li>
+        <li>টাকা নেওয়ার 24 ঘণ্টার মধ্যে ফেরত দিলে শুধু আসল টাকা ফেরত দিতে হবে।</li>
+        <li>24 ঘণ্টার মধ্যে না দিতে পারলে 15 দিনের মধ্যে আসল সহ 15 টাকা ফাইন বাধ্যতামূলক।</li>
+        <li>Document হিসাবে Aadhaar Card বাধ্যতামূলক।</li>
+        <li>Recharge ব্যবসা শর্তাবলী টাকা ধার নেওয়ার মত।</li>
+    </ul>
+
+    <p class="warning-message">
+        সতর্ক: টাকা দিতে অসম্মতি হলে আইনি পদক্ষেপ নেওয়া হবে।
+    </p>
+
+    <p class="instruction">
+        WhatsApp এ সরাসরি চ্যাট করে<br>
+        আপনার নাম<br>
+        মোবাইল নাম্বার<br>
+        Aadhaar Card এর ফটো share করুন
+    </p>
+
+    <!-- Pre-filled WhatsApp message -->
+    <a href="https://wa.me/916009858163?text=আমার%20নাম:%20________%0Aমোবাইল%20নম্বর:%20________%0AAadhaar%20Card%20এর%20ফটো%20send%20করুন" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        WhatsApp এ চ্যাট করুন
+    </a>
+
+    <p class="warning">Call করা নিষেধ, শুধুমাত্র Chatting</p>
+</div>
+
+</body>
+</html>
